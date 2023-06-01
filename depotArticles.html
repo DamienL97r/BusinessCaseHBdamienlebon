@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="JS/script.js"></script>
+    <title>[BrandName]</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">
+            <img class="logo" src="INC/IMG/Logo/logo-fond_clair-removebg-preview.png" alt="">
+        </a>
+        
+
+        <div class="tab">
+            <a href="index.html">Accueil</a>
+            <a href="#">Tarifs</a>
+            <a href="depotArticles.html">Déposer des articles</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="basket-connexionInscription">
+
+            <div class="basket">
+                <img src="INC/IMG/Icones/panier.png" alt="">
+                <a href="#">Panier</a>
+            </div>
+
+            <div class="connexionInscription">
+                <img src="INC/IMG/Icones/profil.png" alt="">
+                <a href="#">Connexion / Inscription</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heading-depot-articles">
+        <h2 class="blue-title">Déposer vos articles</h2>
+        <p>Veuillez sélectionner que vous souhaitez déposer.</p>
+    </div>
+
+    <div class="container-depot-article-basket">
+
+        <div class="depot-article">
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+            <a href="#modal" class="openModal">
+                <div class="card-article">
+                    <img src="INC/IMG/Vetements/Costume/costume-2.png" alt="">
+                    <h3>Article</h3>
+                </div>
+            </a>
+
+
+
+            <!--Modal select service START-->
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <a href="#" class="close">&times;</a>
+                    <h2>[Titre article]</h2>
+
+                    <form action="#">
+
+                        <div class="container-number-remark">
+
+                            <div class="nb-article">
+
+                                <label for="number">Nombre d'article(s)</label>
+                                <select name="number" id="">
+                                    <option value="">0</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                            </div>
+    
+                            <div class="remark">
+                                <label for="remark">Des remarques ?</label>
+                                <textarea placeholder="Exemple: Il y a des perles fragiles sur ce vêtement, il y a une tâche d'huile sur le côté droit..." name="remark" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="container-select-service">
+                            <h3>Sélectionnez le/les services</h3>
+
+                            <div class="flex-container-select-service">
+
+                                <div class="select-service">
+                                    <input type="checkbox" name="service" id="">
+                                    <label for="service">[Service]</label>
+                                    <div class="price">
+                                        <span>[-,--]</span>
+                                        <p>€</p>
+                                    </div>
+                                </div>
+
+                                <div class="select-service">
+                                    <input type="checkbox" name="service" id="">
+                                    <label for="service">[Service]</label>
+                                    <div class="price">
+                                        <span>[-,--]</span>
+                                        <p>€</p>
+                                    </div>
+                                </div>
+
+                                <div class="select-service">
+                                    <input type="checkbox" name="service" id="">
+                                    <label for="service">[Service]</label>
+                                    <div class="price">
+                                        <span>[-,--]</span>
+                                        <p>€</p>
+                                    </div>
+                                </div>
+
+                                <div class="select-service">
+                                    <input type="checkbox" name="service" id="">
+                                    <label for="service">[Service]</label>
+                                    <div class="price">
+                                        <span>[-,--]</span>
+                                        <p>€</p>
+                                    </div>
+                                </div>
+
+                                <div class="select-service">
+                                    <input type="checkbox" name="service" id="">
+                                    <label for="service">[Service]</label>
+                                    <div class="price">
+                                        <span>[-,--]</span>
+                                        <p>€</p>
+                                    </div>
+                                </div>
+
+                                <div class="select-service">
+                                    <input type="checkbox" name="service" id="">
+                                    <label for="service">[Service]</label>
+                                    <div class="price">
+                                        <span>[-,--]</span>
+                                        <p>€</p>
+                                    </div>
+                                </div>
+
+                                <div class="select-service">
+                                    <input type="checkbox" name="service" id="">
+                                    <label for="service">[Service]</label>
+                                    <div class="price">
+                                        <span>[-,--]</span>
+                                        <p>€</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="container-btn">
+
+                            <a class="btn-cancel" href="#">Annuler</a>
+
+                            <button class="main-btn" type="submit">Ajouter au panier</button>
+
+                            <div class="price">
+                                <h3>Total</h3>
+                                <span>[-,--]</span>
+                                <p>€</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Modal select service END-->
+
+        </div>
+
+        <aside class="container-basket">
+            <h3>Panier</h3>
+
+            <form action="#">
+                <button class="main-btn" type="submit">Valider le panier</button>
+            </form>
+
+            <a href="ProcessPaiement1.html" class="main-btn">Valider le panier lien html</a>
+            
+        </aside>
+    </div>
+
+    
+</body>
+</html>
