@@ -7,6 +7,198 @@
     scroll-behavior: smooth;
 }
 
+/*Menu hamburger responsive START */
+
+.resp-nav{
+    background-color: #63A4C7;
+    height: 80px;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.resp-nav-scrolled {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+}
+
+.resp-nav-scrolled > .resp-nav-content{
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.resp-nav-content{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.resp-nav > .resp-nav-content > a > .logo-resp {
+    width: 80px;
+    height: fit-content;
+}
+
+
+
+.resp-nav > .resp-nav-content > a > img {
+    width: 40px;
+}
+
+
+.openModal{
+    text-decoration: none;
+}
+
+
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.hamburger-menu:target {
+    display: block;
+}
+  
+.hamburger-menu-content {
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 0px 20px;
+    width: 70%;
+    height: fit-content;
+    max-height: 80vh;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+.hamburger-menu-content > h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hamburger-menu-content > .tab-resp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hamburger-menu-content > .tab-resp > a {
+    text-decoration: none;
+    color: black;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.163);
+}
+
+.hamburger-menu-content > .tab-resp > a:hover {
+    text-decoration: none;
+    color: black;
+    padding: 18px 0;
+    background-color: rgba(0, 0, 0, 0.066);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    transition: all 0.3s ease-in-out;
+}
+
+.resp-basket-connexionInscription {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resp-basket-connexionInscription > .resp-basket > a > img {
+    width: 35px;
+    margin-bottom: 6px;
+}
+
+.resp-basket-connexionInscription > .resp-basket > a {
+    text-decoration: none;
+    color: black;
+}
+
+.resp-basket-connexionInscription > .resp-basket{
+    width: 230px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.resp-basket-connexionInscription > .resp-connexionInscription{
+    width: 230px;
+    padding: 15px 0 15px 10px;
+    text-align: center;
+}
+
+.resp-basket-connexionInscription > .resp-connexionInscription > a > img {
+    width: 35px;
+    margin-bottom: 6px;
+}
+
+.resp-basket-connexionInscription > .resp-connexionInscription > a {
+    text-decoration: none;
+    color: black;
+}
+ 
+.close-hamburger-menu {
+    color: #63A4C7;
+    position: fixed;
+    right: 3%;
+    top: 2%;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    animation-duration: 4s;
+    animation-name: fadein;
+}
+  
+.close-hamburger-menu:hover {
+    color: #375DA5;
+    transition: all 0.3s ease-in-out;
+}
+
+/*ANIMATION HAMBURGER MENU*/
+
+@keyframes slidein {
+    from {
+      opacity: 0.5;
+      right: -500px;
+    }
+  
+    to {
+      opacity: 1;  
+      right: 0;
+    }
+}    
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+/*Menu hamburger responsive END */
+
+
+
+
 /*      HOME PAGE START       */
 
 
@@ -24,9 +216,46 @@ nav {
 }
 
 .nav-scrolled {
-    background-color: rgba(55, 93, 165, 0.85);
+    background-color: rgba(255, 255, 255, 0.85);
     position: fixed;
     transition: all 0.5s ease-in-out;
+}
+
+.nav-scrolled > .tab > a {
+    color: black;
+}
+
+.nav-scrolled > .tab > a:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.66);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-scrolled > .basket-connexionInscription > .basket > a {
+    color: black;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.nav-scrolled > .basket-connexionInscription > .basket > a:hover {
+    color: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.66);
+}
+
+.nav-scrolled > .basket-connexionInscription > .connexionInscription > a {
+    color: black;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.nav-scrolled > .basket-connexionInscription > .connexionInscription > a:hover{
+    color: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.66);
+}
+
+.nav-scrolled > .basket-connexionInscription {
+    border-left: 2px solid rgba(0, 0, 0, 0.297);
 }
 
 .logo {
@@ -67,9 +296,10 @@ nav {
 }
 
 .basket-connexionInscription {
+    display: flex;
+    flex-direction: column;
     border-left: 2px solid white;
-    padding-left: 70px;
-    margin-right: 70px;
+    padding-left: 50px;
 }
 
 .basket {
@@ -90,7 +320,8 @@ nav {
 }
 
 .connexionInscription > img {
-    height: 30px;
+    height: 25px;
+    padding-left: 6px;
     margin-right: 10px;
 }
 /*NAV END*/
@@ -111,7 +342,7 @@ nav {
     background-color: #375da596;
     border-radius: 20px;
     padding: 50px 80px;
-    width: 500px;
+    width: 70%;
     margin-left: 50%;
     transform: translateX(-50%);
 }
@@ -129,13 +360,14 @@ nav {
 
 .cta-content > a {
     display: block;
+    margin: auto;
+    width: 150px;
     text-align: center;  
     text-decoration: none;
     color: white;
     border: 3px solid rgba(0, 0, 0, 0);
     background-color: #63A4C7;
     padding: 15px 30px;
-    margin: 0 30% 0 30%;
     border-radius: 12px;
     font-size: 1.1rem;
 }
@@ -238,9 +470,9 @@ nav {
 /*QUI SOMMES NOUS ? SECTION START*/
 
 .title-container-half{
-    width: 50%;
+    width: 60%;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .main-container-text-img{
@@ -257,7 +489,6 @@ nav {
 
 .container-text{
     width: 50%;
-
 }
 
 .container-img {
@@ -340,7 +571,7 @@ nav {
     display: flex;
     align-items: center;
     background-color: #e4eeff;
-    width: 380px;
+    width: 500px;
     height: fit-content;
     border-radius: 15px;
     padding: 15px 0;
@@ -763,8 +994,71 @@ footer{
 .container-basket > h3 {
     margin-bottom: 30px;
 }
-
-
 /*CONTAINER BASKET END*/
 
 /*      ARTCLES PAGE END       */
+
+
+
+
+/*      CONTACT PAGE START       */
+
+
+
+/*      CONTACT PAGE START       */
+
+@media screen and (max-width: 1000px){
+    nav{
+        display: none;
+    }
+
+    .resp-nav{
+        display: flex;
+    }
+
+    .call-to-action {
+        background-image: url(../INC/IMG/Accueil/waldemar-k06EAtkJzXU-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 380px;
+        padding-top: 5%;
+    }
+
+    .cta-content {
+        color: white;
+        background-color: #375da596;
+        border-radius: 20px;
+        padding: 25px 50px;
+        width: 68%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cta-content > h1 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+    }
+    
+    .cta-content > p {
+        margin-bottom: 60px;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .title-container-half{
+        width: 100%;
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    .container-text{
+        width: 80%;
+    }
+
+
+    /*PAGE DEPOT ARTICLE*/
+
+}
+
