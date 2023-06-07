@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="JS/script.js"></script>
-    <title>[BrandName]</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JS/script.js"></script>
+    
+        <link rel="icon" type="image/x-icon" href="INC/IMG/Icones/favicon/logo-favicon-removebg-preview.png">
+        <meta name="description" content="Découvrez notre pressing familial de qualité où nous prenons soin de vos vêtements avec expertise. Des services de nettoyage et de repassage professionnels pour vous offrir un look impeccable. Contactez-nous dès aujourd'hui !">
+        <title>Pressing familial de qualité | ProClean PRESSING</title>
+    </head>
 <body>
 
     <!--Menu responsive START-->
@@ -17,10 +19,10 @@
         <div class="resp-nav-content">
 
             <a href="index.html">
-                <img class="logo-resp" src="INC/IMG/Logo/logo-fond_clair-removebg-preview.png" alt="">
+                <img id="logo-img-resp" class="logo-resp" src="INC/IMG/Logo/logo-light.png" alt="">
             </a>
 
-            <p>[BrandName]</p>
+            <img id="logo-title" src="INC/IMG/Logo/logo-title-white.png" alt="">
 
             <a href="#hamburger-menu">
                 <img id="icon-burger-menu" src="INC/IMG/Icones/menu-burger-white.png" alt="">
@@ -31,7 +33,8 @@
     <div id="hamburger-menu" class="hamburger-menu">
         <div class="hamburger-menu-content">
             <a href="#" class="close-hamburger-menu">&times;</a>
-            <h2>Menu</h2>
+
+            <img src="INC/IMG/Logo/logo-title-black.png" alt="">
 
             <div class="tab-resp">
                 <a href="index.html">Accueil</a>
@@ -57,14 +60,25 @@
                 </div>
                 
             </div>
+
+            <div class="resp-bran-copyright">
+                <p>[BrandName] © 2023 |</p>
+                <a href="#">Mentions légales</a>
+                <span> - </span>
+                <a href="#">Politiques de confidentialités</a>
+            </div>
             
         </div>
     </div>
     <!--Menu responsive END-->
 
+
+
+
+
     <nav>
         <a href="index.html">
-            <img class="logo" src="INC/IMG/Logo/logo-fond_clair-removebg-preview.png" alt="">
+            <img id="logo-img-desktop" class="logo" src="INC/IMG/Logo/logo-light.png" alt="">
         </a>
         
 
@@ -92,13 +106,67 @@
 
     <div class="contact-container">
         
-        <div class="info-contact">
+        <div class="info-contact-container">
             <h3>Informations de contact</h3>
+
+            <div class="info-contact">
+                <img src="INC/IMG/Icones/panier-black.png" alt="">
+                <p>Téléphone : 01 23 45 67 89</p>
+            </div>
+            <div class="info-contact">
+                <img src="INC/IMG/Icones/panier-black.png" alt="">
+                <p>Mail : contact@info.com</p>
+            </div>
+            <div class="info-contact">
+                <img src="INC/IMG/Icones/panier-black.png" alt="">
+                <p>Adresse : 555 rue Hello World, 55555 Ville</p>
+            </div>
         </div>
 
-        <div class="form-contact">
+        <div class="form-contact-container">
             <h3>Contactez nous !</h3>
             
+            <div class="form-contact">
+                <form action="">
+                    <div class="double-input-wrap">
+                        <div class="name">
+                            <label for="name">Prénom</label>
+                            <input placeholder="Prénom" id="name" type="text">
+                        </div>
+
+                        <div class="last-name">
+                            <label for="lastname">Nom</label>
+                            <input placeholder="Nom" id="lastname" type="text">
+                        </div>
+                    </div>
+
+                    <div class="full-input">
+                        <div class="mail">
+                            <label for="mail">Mail</label>
+                            <input placeholder="Mail" id="mail" type="mail">
+                        </div>
+                    </div>
+
+                    <div class="full-input">
+                        <div class="subject">
+                            <label for="subject">Objet</label>
+                            <input placeholder="Objet" id="subject" type="text">
+                        </div>
+                    </div>
+
+                    <div class="full-input">
+                        <div class="message">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message ici..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="full-input">
+                        <button type="submit">Envoyer</button>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </div>
     
